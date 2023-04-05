@@ -6,6 +6,16 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[profile.release]
+opt-level = 3
+lto = true
+debug = false
+debug-assertions = false
+overflow-checks = false
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
+
 [dependencies]
 rand = "0.8.5"
 
