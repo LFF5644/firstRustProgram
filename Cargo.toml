@@ -1,5 +1,5 @@
 [package]
-name = "firstProgramm"
+name = "first_program"
 version = "0.1.0"
 authors = ["LFF5644 (Code-Server) <meerschweinchen5644@gmail.com>"]
 edition = "2018"
@@ -9,5 +9,8 @@ edition = "2018"
 [dependencies]
 
 [[bin]]
-name = "firstProgramm"
+name = "first_program"
 path = "main.rs"
+
+[target.arm-unknown-linux-gnueabihf]
+linker = "arm-linux-gnueabihf-gcc"
