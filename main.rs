@@ -2,7 +2,7 @@ use rand::Rng;
 use std::ops::RangeInclusive;
 
 fn main(){
-	println!("Random Number: {:2}",gen_number());
+	println!("Random Number: {:02}",gen_number());
 	loop{
 		print!("{:02} ",gen_number());
 	}
