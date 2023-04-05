@@ -1,7 +1,8 @@
-
 fn main(){
-	//print("Nummer startet bei "+text);
-	for i in 0..10{
+	let start_num=0;
+	let text=format!("Es Wird bei {} gestartet",start_num);
+	print(&text);
+	for i in start_num..10{
 		print(&i.to_string());
 	}
 }
