@@ -12,5 +12,5 @@ edition = "2018"
 name = "first_program"
 path = "main.rs"
 
-[target.arm-unknown-linux-gnueabihf]
-linker = "arm-linux-gnueabihf-gcc"
+#[target.arm-unknown-linux-gnueabihf]
+#linker = "arm-linux-gnueabihf-gcc"
