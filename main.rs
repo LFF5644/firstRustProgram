@@ -1,12 +1,11 @@
+use rand::Rng;
+use std::ops::RangeInclusive;
+
 fn main(){
-	let start_num=0;
-	let text=format!("Es Wird bei {} gestartet",start_num);
-	print(&text);
-	for i in start_num..10{
-		print(&i.to_string());
-	}
+	println!("Random Number: {}",gen_number());
 }
 
-fn print(text: &str){
-	println!("{}",text);
+fn gen_number()->i32{
+	let mut rng=rand::thread_rng();
+	return rng.gen_range(RangeInclusive::new(1,100));
 }
